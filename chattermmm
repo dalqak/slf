@@ -1,36 +1,12 @@
 local function run (msg , matches)
-if matches [1]=='سلام' then
-return '💋 سـلـام گـلـه مـَن'
+if matches[1]=="سلام" and is_sudo(msg) then 
+return "سلام"
 end
 end
 
 return {
 patterns ={
 "^سلام$"
-},
-run =run
-}
-local function run (msg , matches)
-if matches [1]=='😐' then
-return '😐'
-end
-end
-
-return {
-patterns ={
-"^😐$"
-},
-run =run
-}
-local function run (msg , matches)
-if matches [1]=='بابات کیه؟' then
-return '@bokkon 🙈😍🙈'
-end
-end
-
-return {
-patterns ={
-"^بابات کیه؟$"
 },
 run =run
 }
